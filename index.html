@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>K. Consulting</title>
+    <style type="text/css" media="screen">
+        #title {
+            text-align: center; 
+            font-size: 70px; 
+            position: relative;
+            color: antiquewhite;
+            z-index: 1;
+            background-color: black;
+            width: 600px;
+            height: 15%;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            left: 40%;
+            top: 50px;
+        }
+        #navigationBar {
+            position: relative;
+            margin: 0;
+            padding: 0 ;
+            height: 20px;
+            width: 600px;
+            text-align: center;
+            left: 40%;
+            z-index: 2;
+        }
+        #navigationBar ul {
+            margin: 0;
+            padding: 0 ;
+            position: relative;
+            height: 30px;
+            width: 480px;
+            list-style-type: none;
+            background-color: #eeeeee;
+            overflow: visible;
+            display: inline-block;
+        }
+        #navigationBar ul > li {
+            display: block;
+            float: left;
+            height: auto;
+            /* menu header's items width */
+            width: 120px;
+        }
+        #navigationBar li > a {
+            display: block;
+            padding: 0 0 0 10px;
+            height: 100%;
+            width: 109px;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
+            border-left: 1px black solid;
+            border-top: 1px black solid;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 17px;
+            text-decoration: none;
+            background-color: #eeeeee;
+            color: #5d5636;
+        }
+        #navigationBar ul ul {
+        margin-top: 2px;
+            display: none;
+            position: relative;
+            height: auto;
+            width: 160px;
+            border: 1px #666666 solid;
+            background-color: #dddddd;
+        }
+        #navigationBar ul ul li{
+            position: relative;
+            float: none;
+            display: block;
+            height: 28px;
+            width: 100%;
+            border: none;
+        }
+        #navigationBar ul ul li > a {
+            height: 100%;
+            width: 96%;
+            padding: 0 0 0 4%;
+            line-height: 28px;
+            background-color: transparent;
+            border: none;
+            color: #000000;
+            font-size: 12px;
+            font-style: normal;
+        }
+        #navigationBar li:hover > a {
+            color: #220000;
+            background-color: #eeeabe;
+        }
+        #navigationBar li:hover > ul {
+            display: block;
+        }
+        
+        body {
+            font-family: fantasy; 
+            background-color: black;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
+        
+        #program {
+            text-align: left; 
+            padding: 0em 2em; 
+            width: 1100px; 
+            height: 575px; 
+            position: relative; 
+            top: 20px;
+            left: 10%;
+            background: linear-gradient(to top left, greenyellow , green);
+            padding-top: 5px;
+            padding-left: 5%;
+        }
+        
+        #first {
+            font-size: 200%;
+        }
+        
+        #sidebar { 
+            position: relative;
+            width: 200px; 
+            height: 30px; 
+            left: 1000px;; 
+            margin-top: -570px; 
+        }
+        
+        #sidebar ol { 
+            margin: 0 0 1em 0; 
+            <!background-color: snow; 
+            <!border: 2px solid black; 
+        }
+        #sidebar li a:link, #sidebar li a:visited { text-decoration: none; color: #055; }
+        #sidebar li a:hover { color: red; }
+        
+        #it1 {
+            position: relative;
+            margin-top: 90px;
+            left: 520px;
+        }
+        #slogan {
+            position: relative;
+            margin-top: -500px;
+            left: 475px;;
+            color: aliceblue;
+        }
+        
+        footer {
+            position: relative;
+            text-align: center;
+            color: antiquewhite;
+            width: 600px;
+            left: 40%;
+            top: 540px;
+        }
+        
+        #main {
+            width: 1000px;
+        }
+        
+    </style>
+</head>
+    <div id="main">
+<body>
+    <h1 id="title">K. Consulting</h1>
+    <nav id="navigationBar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    </nav>
+    <nav id="program">
+    <h1 id="first">IT Leadership</h1>
+    <h2>Business Intelligence</h2>
+    <h2>IT Strategy</h2>
+    <h2>Service Manangement</h2>
+    <h2>Compliance and Auditing</h2>
+    <h2>ITIL</h2>
+    <h2>Program Manangement</h2>
+    <h2>Finance and Demand Planning</h2>
+    <h2>Data Center Operations</h2>
+    </nav>
+        
+    <nav id="slogan">
+        <h3>Helping everyone advance into to the tech world.</h3>
+    </nav>
+    
+    <img src="images/it.jpg" alt="it1" id="it1">
+    
+    <nav id="sidebar">
+        <h3>Big IT Companies</h3>
+        <ol><li><a href="https://www.ibm.com/us-en/" target="_blank">IBM Website</a></li>
+            <li><a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel Website</a></li>
+            <li><a href="http://www.apple.com" target="_blank">Apple Website</a></li>
+            <li><a href="https://www.microsoft.com/en-us/" target="_blank">Microsoft Website</a></li>
+            <li><a href="https://www.cisco.com" target="_blank">Cisco Website</a></li>
+        </ol>
+    </nav>
+    
+    <footer>
+        Copyright 2016 Davalos Enterprises
+    </footer>
+    
+</body>
+    </div>
+</html>
+

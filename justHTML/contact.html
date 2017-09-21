@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+    
+    <div id="main">
+<body>
+    <h1 id="title">K. Consulting</h1>
+    <nav id="navigationBar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    </nav>
+    <nav id="contactInfo">
+    <h1 id="title2">Contact Form</h1>
+    <p>Please fill out the form below to contact us. Fields in bold are required.</p>
+    <form action="thanks.html" method="post" enctype="multipart/form-data"
+id="contactForm">
+        <div>
+            <label class="required field" for="name">Name</label>
+            <input id="name" tabindex="1">
+        </div>
+        <div>
+            <label class="field" for="job">Occupation</label>
+            <input id="job" tabindex="2">
+        </div>
+        <div>
+            <label class="required field">Email adress</label>
+            <input id="email" tabindex="3">
+        </div>
+        <div>
+            <label class="required field" for="bio">Reason for Contacting Us</label>
+            <textarea id="bio" rows="6" cols="40"></textarea>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+    </nav>
+    
+    <footer>
+        Copyright 2016 Davalos Enterprises
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/form.js"></script>
+    
+    <! put audio in case the form is not filled out correctly
+        it will play and alert the user !>
+    <audio id="wrong" src="audio/Button-sound-wrong.mp3"></audio>
+</body>
+    </div>
+</html>

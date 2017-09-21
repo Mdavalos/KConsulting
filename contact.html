@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style type="text/css" media="screen">
+        #title {
+            text-align: center; 
+            font-size: 70px; 
+            position: relative;
+            color: antiquewhite;
+            background-color: black;
+            width: 600px;
+            height: 15%;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            left: 40%;
+            top: 50px;
+        }
+        #navigationBar {
+            position: relative;
+            margin: 0;
+            padding: 0 ;
+            height: 20px;
+            width: 600px;
+            text-align: center;
+            left: 40%;
+        }
+        #navigationBar ul {
+            margin: 0;
+            padding: 0 ;
+            position: relative;
+            height: 30px;
+            width: 480px;
+            list-style-type: none;
+            background-color: #eeeeee;
+            overflow: visible;
+            display: inline-block;
+        }
+        #navigationBar ul > li {
+            display: block;
+            float: left;
+            height: auto;
+            /* menu header's items width */
+            width: 120px;
+        }
+        #navigationBar li > a {
+            display: block;
+            padding: 0 0 0 10px;
+            height: 100%;
+            width: 109px;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
+            border-left: 1px black solid;
+            border-top: 1px black solid;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 17px;
+            text-decoration: none;
+            background-color: #eeeeee;
+            color: #5d5636;
+        }
+        #navigationBar ul ul {
+        margin-top: 2px;
+            display: none;
+            position: relative;
+            height: auto;
+            width: 160px;
+            border: 1px #666666 solid;
+            background-color: #dddddd;
+        }
+        #navigationBar ul ul li{
+            position: relative;
+            float: none;
+            display: block;
+            height: 28px;
+            width: 100%;
+            border: none;
+        }
+        #navigationBar ul ul li > a {
+            height: 100%;
+            width: 96%;
+            padding: 0 0 0 4%;
+            line-height: 28px;
+            background-color: transparent;
+            border: none;
+            color: #000000;
+            font-size: 12px;
+            font-style: normal;
+        }
+        #navigationBar li:hover > a {
+            color: #220000;
+            background-color: #eeeabe;
+        }
+        #navigationBar li:hover > ul {
+            display: block;
+        }
+        
+        #title2 {
+            font-size: 250%;
+        }
+        
+        #contactInfo {
+            position: relative;
+            top:30px;
+            text-align: center;
+            background: linear-gradient(to top left, greenyellow , green);
+            width: 600px;
+            left: 30%;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+        }
+        
+        form div {
+            margin-bottom: 1em;
+        }
+        div.submit input {
+            margin-left: 30%;
+        }
+        label.field {
+            display: block;
+            float: left;
+            margin-right: 15px;
+            width: 150px;
+            text-align: right;
+        }
+        label.required {
+            font-weight: bold;
+        }
+        div.error label {
+            color: red;
+        }
+        div.errors {
+            border: 2px solid red;
+            top: 10px;
+            left: 80px;
+            color: red;
+            width: 400px;
+            padding: 3%;
+            position: relative;
+            text-align: left;
+        }
+        
+        body{
+            background-color: black;
+            font-family: fantasy;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
+        
+        footer {
+            position: relative;
+            text-align: center;
+            color: antiquewhite;
+            width: 600px;
+            left: 40%;
+            top: 50px;
+        }
+        
+        #main {
+            width: 1000px;
+        }
+    </style>
+</head>
+    
+    <div id="main">
+<body>
+    <h1 id="title">K. Consulting</h1>
+    <nav id="navigationBar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    </nav>
+    <nav id="contactInfo">
+    <h1 id="title2">Contact Form</h1>
+    <p>Please fill out the form below to contact us. Fields in bold are required.</p>
+    <form action="thanks.html" method="post" enctype="multipart/form-data"
+id="contactForm">
+        <div>
+            <label class="required field" for="name">Name</label>
+            <input id="name" tabindex="1">
+        </div>
+        <div>
+            <label class="field" for="job">Occupation</label>
+            <input id="job" tabindex="2">
+        </div>
+        <div>
+            <label class="required field">Email adress</label>
+            <input id="email" tabindex="3">
+        </div>
+        <div>
+            <label class="required field" for="bio">Reason for Contacting Us</label>
+            <textarea id="bio" rows="6" cols="40" tabindex="4"></textarea>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+    </nav>
+    
+    <footer>
+        Copyright 2016 Davalos Enterprises
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/form.js"></script>
+    
+    <! put audio in case the form is not filled out correctly
+        it will play and alert the user !>
+    <audio id="wrong" src="audio/Button-sound-wrong.mp3"></audio>
+</body>
+    </div>
+</html>
